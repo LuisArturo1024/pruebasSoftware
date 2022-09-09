@@ -1,1 +1,7 @@
-03/09/2022 7:04 Queda listo programa inicial, falta crear y guardar logs. Además, revisar ejemplos exhaustivos como respuestas a las preguntas; también supuestos.
+03/09/2022 19:04 Queda listo programa inicial, falta crear y guardar logs. Además, revisar ejemplos exhaustivos como respuestas a las preguntas; también supuestos.
+04/09/2022 21:50 Lista primera implementación de logs. Cambiar parámetros por entradas a y b directamente.
+    Agregar otro parámetro para recibir tipo de error y eliminar oprtn del .log.
+    Agregar cantidad de caracteres para cada string
+    Considerar caso único lenguaje, implementar como lista que se chequea para cada input
+    Considerar caso donde string está vacío para "elegir elemento"
+    

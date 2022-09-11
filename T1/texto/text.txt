@@ -1,3 +1,4 @@
 Este es un texto de prueba
 con un salto de linea entre medio
 cadena de caracteres al azar 123$!@##$%
+這是一份非常簡單的說明

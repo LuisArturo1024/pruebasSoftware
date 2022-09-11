@@ -41,7 +41,7 @@ def elegirElemento(stack):
         if inp >= len(stack) or inp < 0:
             writeLog(-2,index=str(inp))
             elegirElemento(stack)
-        print("\n---Texto del elemento seleccionado de la pila---\n")
+        print("\n---Texto del elemento seleccionado de la pila [largo: {}]---\n".format(str(len(stack[inp]))))
         print(stack[inp])
         writeLog(1,element=stack[inp],index=inp)
         print('\n------------------------------------------------\n')
@@ -51,14 +51,16 @@ def elegirElemento(stack):
         elegirElemento(stack)
 
 def masLargo(stack):
-    print("\n---Texto del elemento más largo de la pila---\n")
-    print(max(stack, key=len))
+    lar = max(stack, key=len)
+    print("\n---Texto del elemento más largo de la pila [largo: {}]---\n".format(str(len(lar))))
+    print(lar)
     writeLog(2,element=max(stack, key=len))
     print('\n---------------------------------------------\n')
 
 def masCorto(stack):
-    print("---Texto del elemento más corto de la pila---\n")
-    print(min(stack, key=len))
+    shor = min(stack, key=len)
+    print("---Texto del elemento más corto de la pila [largo: {}]---\n".format(str(len(shor))))
+    print(shor)
     writeLog(3,element=min(stack, key=len))
     print('\n---------------------------------------------\n')
 

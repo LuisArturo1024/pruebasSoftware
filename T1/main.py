@@ -49,8 +49,7 @@ def elegirElemento(stack):
             writeLog(1,inp_a=str(inp),value=stack[inp])
             print('\n------------------------------------------------\n')
             return
-    except Exception as e:
-        print(e)
+    except:
         print("\nADVERTENCIA: Introduzca un número de opción válido\n")
         writeLog(1,inp_a=str(string),err=1,err_menu2='invalid input')
         elegirElemento(stack)
@@ -79,8 +78,7 @@ def comparar(stack):
             writeLog(4,inp_a=str(inp),inp_b=str(inp2),value=diff)
             print('\n------------------------------------------------\n')
             return
-    except Exception as e:
-        print(e)
+    except:
         print("\nADVERTENCIA: Introduzca un número de opción válido\n")
         writeLog(4,inp_a=str(string),err=1,err_menu2='invalid input')
         comparar(stack)
@@ -119,8 +117,7 @@ def mainActivity(stack):
                 masCorto(stack)
             elif inp == 4:
                 comparar(stack)
-        except Exception as e:
-            print(e)
+        except:
             print("\nIntroduzca un número de opción válido")
             writeLog(0,inp_a=string,err=1,err_menu2='invalid input')
 

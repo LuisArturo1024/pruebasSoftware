@@ -4,7 +4,7 @@ from datetime import datetime
 def prepareLog():
     filename = os.path.join('logs', "log.txt")
     file = open(filename,'w')
-    file.write("datetime;operacion_menu;entrada_a;entrada_ b;valor_obtenido;cod_error;desc_error\n")
+    file.write("datetime,operacion_menu,entrada_a,entrada_ b,valor_obtenido,cod_error,desc_error\n")
     file.close()
 
 def endLog():
@@ -33,7 +33,7 @@ def writeLog(op_menu,inp_a='',inp_b='',err_menu2='',value='',err=0):
     file = open(file,'a')
     now = datetime.now()
     dt = now.strftime("%Y-%m-%d %H:%M:%S")
-    file.write(dt+';'+str(op_menu)+';'+str(inp_a)+';'+str(inp_b)+';'+str(value)+';'+error+';'+err_menu2+'\n')
+    file.write(dt+','+str(op_menu)+','+str(inp_a)+','+str(inp_b)+','+str(value)+','+error+','+err_menu2+'\n')
     file.close()
 
 def elegirElemento(stack):

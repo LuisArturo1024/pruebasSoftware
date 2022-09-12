@@ -1,0 +1,1 @@
+datetime,operacion_menu,entrada_a,entrada_ b,valor_obtenido,cod_error,desc_error

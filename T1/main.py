@@ -16,16 +16,17 @@ def endLog():
 
 def captureInputs():
     stack = []
-    for filename in os.listdir('texto'):
-        file = os.path.join('texto', filename)
-        if os.path.isfile(file) and filename == 'text.txt':
-            lines = open(file)
-            for line in lines.readlines():
-                stack.append(line.strip())
-            return stack
-        else:
-            print('Agregue archivo de texto plano "text.txt" válido al directorio /texto')
-            quit()
+    if len(os.listdir('texto')) == 0:
+        print('Agregue archivo de texto plano "text.txt" válido al directorio /texto')
+        quit()
+    else:
+        for filename in os.listdir('texto'):
+            file = os.path.join('texto', filename)
+            if os.path.isfile(file) and filename == 'text.txt':
+                lines = open(file)
+                for line in lines.readlines():
+                    stack.append(line.strip())
+                return stack           
     
 def writeLog(op_menu,inp_a='',inp_b='',err_menu2='',value='',err=0):
     error = str(err)
